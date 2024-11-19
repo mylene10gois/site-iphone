@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+/* pressionando control e ; faz comentário automático */
+:root{
+    --color-01:#06c;
+    --color-02:#000;
+    --color-03:#CCC;
+    --color-04:#FFF;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* essa color é variavel */
+#cabecalho{
+    background-color: var(--color-02);
+    margin-bottom: 20px;
+}
+
+#cabecalho #logo{
+    width: 30px;
+
+}
+
+#cabecalho .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Menu */
+#menu ul{
+    display: flex;
+}
+
+#menu ul a {
+    display:block;
+    padding: 20px 30px;
+    color: var(--color-04);
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+#menu ul a:hover{
+    background-color: var(--color-01);
+
+}
+
+#menu .submenu{
+    position: absolute;
+    display: none;
+    background-color: var(--color-02);
+    z-index: 1;
+}
+#menu li:hover .submenu{
+    display: block;
+}
+.titulo{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+#historia{
+    margin-bottom: 50px;
+}
+#historia img{
+    width: 400px;
+    border-radius: 30px;
+    float: left;
+    margin-right: 20px;
+}
+#historia p{
+    text-align: justify;
+    margin-bottom: 15px;
+}
+#fotos #galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+#fotos #galeria img{
+    display: block;
+    width: 100%;
+    transition: all 0.3s linear;
+}
+#fotos #galeria img:hover{
+    transform: scale(1.1);
+
+}
+#videos #galeria{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 30px;
+margin-bottom: 50px;
+}
+#rodape{
+    text-align: center;
+    color: var(--color-04);
+    padding: 30px;
+    background-color: var(--color-02);
+}
+#rodape a{
+    color: var(--color-04);
+    text-decoration: none;
+}
+#rodape a:hover{
+    text-decoration: underline;
+}
